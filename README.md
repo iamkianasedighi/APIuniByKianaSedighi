@@ -1,3 +1,5 @@
+Overview
+This API is designed to interact with a MySQL database for a university system. It provides endpoints to fetch data from various tables, insert new records, and retrieve class enrollment information for students. The API is built using FastAPI and interacts with a MySQL database.
 Setup
 Base URL: http://localhost:8000
 Database: MySQL
