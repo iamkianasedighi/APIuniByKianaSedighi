@@ -1,16 +1,18 @@
-Overview
+Overview: 
 This API is designed to interact with a MySQL database for a university system. It provides endpoints to fetch data from various tables, insert new records, and retrieve class enrollment information for students. The API is built using FastAPI and interacts with a MySQL database.
 
-Setup
+Setup: 
 Base URL: http://localhost:8000
 Database: MySQL
 Database Name: uni
+
 Tables:
 STDinfo (Student Information)
 PROFinfo (Professor Information)
 CLASSinfo (Class Information)
 ENROLLinfo (Enrollment Information)
-Endpoints
+
+Endpoints: 
 1. Fetch Table Data
 Endpoint: GET /fetch_table/
 Description: Retrieves all records from a specified table.
@@ -41,11 +43,13 @@ Endpoint: GET /enrolled_class/
 Description: Retrieves the name of the class that a student is enrolled in based on the student ID.
 Query Parameters:
 student_id (int): The ID of the student whose class enrollment information is requested.
+
 Responses:
 200 OK: Returns the name of the class the student is enrolled in.
 404 Not Found: Returns an error if no class is found for the given student ID.
 500 Internal Server Error: Returns an error if a database error occurs.
-Error Handling
+
+Error Handling:
 400 Bad Request: Invalid request parameters or data.
 404 Not Found: Requested resource or data not found.
 500 Internal Server Error: Issues with the database or unexpected errors.
